@@ -1,110 +1,56 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Madhu Agro Forestry Home</title>
-    <style>
-      /* CSS for page layout */
-      body {
-        margin: 0;
-        padding: 0;
-        font-family: Arial, sans-serif;
-      }
-      header {
-        background-color: #64B5F6;
-        padding: 10px;
-        text-align: center;
-      }
-      h1 {
-        margin: 0;
-        color: #FFFFFF;
-      }
-      nav {
-        background-color: #BBDEFB;
-        display: flex;
-        justify-content: center;
-      }
-      nav a {
-        display: block;
-        color: #212121;
-        text-decoration: none;
-        padding: 10px;
-      }
-      nav a:hover {
-        background-color: #1976D2;
-        color: #FFFFFF;
-      }
-      main {
-        margin: 20px;
-      }
-      .feature {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        margin-bottom: 20px;
-      }
-      .feature img {
-        max-width: 100%;
-        height: auto;
-      }
-      .feature h2 {
-        margin-top: 10px;
-        margin-bottom: 5px;
-      }
-      .feature p {
-        margin: 0;
-      }
-      /* CSS for page styling */
-      .hero {
-        background-image: url('https://source.unsplash.com/1600x900/?nature,forest');
-        background-size: cover;
-        background-position: center;
-        height: 500px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-      }
-      .hero h1 {
-        color: #FFFFFF;
-        font-size: 3rem;
-        margin-bottom: 20px;
-      }
-      .hero p {
-        color: #FFFFFF;
-        font-size: 1.5rem;
-        margin: 0;
-      }
-    </style>
-  </head>
-  <body>
-    <header>
-      <h1>Madhu Agro Forestry</h1>
-    </header>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">Services</a>
-      <a href="#">Contact</a>
-    </nav>
-    <main>
-      <section class="hero">
-        <div>
-          <h1>Welcome to Madhu Agro Forestry</h1>
-          <p>Grow your future with us</p>
-        </div>
-      </section>
-      <section class="feature">
-        <img src="https://source.unsplash.com/800x600/?forest,trees" alt="Image of forest trees">
-        <h2>About Us</h2>
-        <p>We are dedicated to sustainable agro forestry practices and helping our clients grow their land into productive and diverse ecosystems.</p>
-      </section>
-      <section class="feature">
-        <img src="https://source.unsplash.com/800x600/?agriculture,farm" alt="Image of an agriculture farm">
-        <h2>Services</h2>
-        <p>We offer a range of services, including tree planting, soil enrichment, land design, and more. Contact us to learn more about how we can help you.</p>
-      </section>
-      <section class="feature">
-        <img src="https
+<head>
+	<title>Agroforestry Home Page</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+	<script src="script.js"></script>
+</head>
+<body>
+	<header>
+		<h1>Agroforestry</h1>
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Services</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section id="banner">
+			<h2>Agroforestry for a sustainable future</h2>
+			<p>Agroforestry combines trees, crops, and livestock to create diverse, sustainable, and productive land-use systems.</p>
+			<a href="#" class="btn">Learn More</a>
+		</section>
+		<section id="about">
+			<h2>About Agroforestry</h2>
+			<p>Agroforestry is a land-use system that integrates trees, crops, and livestock on the same piece of land. This approach offers numerous benefits, including:</p>
+			<ul>
+				<li>Improved soil quality and fertility</li>
+				<li>Reduced erosion and runoff</li>
+				<li>Increased biodiversity</li>
+				<li>Enhanced carbon sequestration</li>
+				<li>Greater resilience to climate change</li>
+			</ul>
+		</section>
+		<section id="contact">
+			<h2>Contact Us</h2>
+			<form>
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name" required>
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email" required>
+				<label for="message">Message:</label>
+				<textarea id="message" name="message" required></textarea>
+				<input type="submit" value="Send">
+			</form>
+			<div id="map"></div>
+		</section>
+	</main>
+	<footer>
+		<p>&copy; 2023 Agroforestry</p>
+	</footer>
+</body>
+</html>
