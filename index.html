@@ -1,56 +1,78 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Agroforestry Home Page</title>
+	<meta charset="UTF-8">
+	<title>Agroforestry Website</title>
 	<link rel="stylesheet" href="style.css">
-	<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
-	<script src="script.js"></script>
 </head>
 <body>
 	<header>
-		<h1> Madhu Agroforestry</h1>
 		<nav>
 			<ul>
 				<li><a href="#">Home</a></li>
 				<li><a href="#">About</a></li>
 				<li><a href="#">Services</a></li>
+				<li><a href="#">Gallery</a></li>
 				<li><a href="#">Contact</a></li>
 			</ul>
 		</nav>
+		<h1>Agroforestry</h1>
+		<p>A sustainable way to grow food and protect the environment</p>
 	</header>
+	
 	<main>
-		<section id="banner">
-			<h2>Agroforestry for a sustainable future</h2>
-			<p>Agroforestry combines trees, crops, and livestock to create diverse, sustainable, and productive land-use systems.</p>
-			<a href="#" class="btn">Learn More</a>
+		<section class="feature">
+			<h2>Our Mission</h2>
+			<p>We aim to promote the adoption of agroforestry practices to support sustainable land use and food production, as well as biodiversity conservation and carbon sequestration.</p>
 		</section>
-		<section id="about">
-			<h2>About Agroforestry</h2>
-			<p>Agroforestry is a land-use system that integrates trees, crops, and livestock on the same piece of land. This approach offers numerous benefits, including:</p>
+		
+		<section class="services">
+			<h2>Our Services</h2>
 			<ul>
-				<li>Improved soil quality and fertility</li>
-				<li>Reduced erosion and runoff</li>
-				<li>Increased biodiversity</li>
-				<li>Enhanced carbon sequestration</li>
-				<li>Greater resilience to climate change</li>
+				<li>Agroforestry planning and design</li>
+				<li>Tree planting and maintenance</li>
+				<li>Harvest and marketing of forest products</li>
+				<li>Training and education programs</li>
 			</ul>
 		</section>
-		<section id="contact">
+		
+		<section class="gallery">
+			<h2>Gallery</h2>
+			<div class="grid-container">
+				<div class="grid-item">
+					<img src="image1.jpg" alt="Agroforestry field">
+				</div>
+				<div class="grid-item">
+					<img src="image2.jpg" alt="Harvesting forest products">
+				</div>
+				<div class="grid-item">
+					<img src="image3.jpg" alt="Training program">
+				</div>
+				<div class="grid-item">
+					<img src="image4.jpg" alt="Tree planting">
+				</div>
+			</div>
+		</section>
+		
+		<section class="contact">
 			<h2>Contact Us</h2>
-			<form>
+			<form action="#" method="post">
 				<label for="name">Name:</label>
 				<input type="text" id="name" name="name" required>
+				
 				<label for="email">Email:</label>
 				<input type="email" id="email" name="email" required>
+				
 				<label for="message">Message:</label>
 				<textarea id="message" name="message" required></textarea>
-				<input type="submit" value="Send">
+				
+				<button type="submit">Send</button>
 			</form>
-			<div id="map"></div>
 		</section>
 	</main>
+	
 	<footer>
-		<p>&copy; 2023 Agroforestry</p>
+		<p>&copy; 2023 Agroforestry Website. All rights reserved.</p>
 	</footer>
 </body>
 </html>
